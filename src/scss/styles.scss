@@ -1,0 +1,482 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: aleo;
+    .site {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .part-one {
+            background-image: url(../img/header-Image.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+            height: 30em;
+            display: flex;
+            flex-flow: column; 
+            align-items: center;
+            justify-content: center;
+        .content { 
+            display: flex;
+            flex-flow: column; 
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            height: 100%;
+            border: 1px;
+            .zagolovok {
+                color: white;
+                margin-top: auto;
+                display: flex;
+                flex-flow: column; 
+                align-items: center;
+                margin-bottom: 2em;
+                .zagolovok__name {
+                    font-size: 2.5em;
+                    margin: 0;
+                }
+                .zagolovok__deviz {
+                    letter-spacing: 0.31em;
+                }           
+            }
+            .search {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                padding: 1px;
+                width: 32em;
+                height: 3em;
+                background-color: white;
+                @media screen and (max-width: 1000px) {
+                    transform: scale(0.7);
+                }
+                input::placeholder {
+                    text-align: center;
+                    opacity: 50%;
+                }
+                input {
+                    text-align: center;
+                    width: 75%;
+                    border: none;
+                    outline: none;
+                }
+                .search__button:hover {
+                    background-color: blueviolet;
+                    transition-duration: 0.2s;
+                }
+                .search__button {
+                    width: 25%;
+                    border: none;
+                    background-color: #5474fd;
+                    color: white;
+                    text-transform: uppercase;
+                    i {
+                        margin: 0 0.5em;
+                    }
+                }  
+            }
+            .scroll {
+                background-color: transparent;
+                color: white;
+                opacity: 70%;
+                border: none;
+                margin: 5em 0;
+                letter-spacing: 0.2em;
+            }
+            .scroll:hover {
+                color: wheat;
+            }
+            .bot-line {
+                height: 3em;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                width: 90%;
+                z-index: 2;
+                color: white;
+                .bot-line__logo {
+                    padding: 0.7em 0.7em 0.7em 0;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    }
+                .bot-line__info {
+                    display: flex;
+                    flex-flow: row;
+                    right: 15em;
+                    @media screen and (max-width: 1000px) {
+                        position: absolute;
+                        right: 5em;
+                        bottom: -3em;
+                        flex-direction: column;
+                        background-color:#5474fd ;
+                    }
+                    .misc {
+                        color: white;
+                        border: none;
+                        background-color: transparent;
+                        padding: 0.9em ;
+                        font-size: 0.8em;
+                    }
+                    .misc:hover {
+                        border-bottom: 4px solid red;
+                        transition-duration: 0.2s;
+                    }
+                }
+               
+            }
+        }
+        .blue-line {
+            position: absolute;
+            width: 100%;
+            height: 3em;
+            background-color: #5474fd;
+            z-index: 1;
+            bottom: 0;
+        }
+    }
+    }
+}
+
+section {
+    position: relative;
+            width: 100%;
+            display: flex;
+            flex-flow: column; 
+            align-items: center;
+            justify-content: center;
+            .content { 
+                display: flex;
+                flex-flow: column; 
+                align-items: center;
+                justify-content: space-between;
+                width: 70%;
+                height: 100%;
+     }
+} 
+
+.part-two {
+        background-image: url(../img/Rectangle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    .top {
+        display: flex;
+        flex-flow: row nowrap;
+        @media screen and (max-width: 1000px) {
+            flex-flow: column;
+            align-items: center;
+        }
+        .top__text {
+            display: flex;
+            flex-flow: column ;
+            justify-content: flex-end;
+            width: 50%;
+            height: 25em;
+            padding-bottom: 20em;
+            color: white;
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                padding-bottom: 0;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 5em;
+                height: 19em;
+            }
+            .big-text {
+                margin-bottom: 1em;
+                font-size: 2em;
+            }
+            .small-text {
+                margin-bottom: 2em;
+            }
+            .explore-btn {
+                align-self: flex-start;
+                padding: 1em 1.5em;
+                background-color: #5474fd;
+                color: white;
+                border: none;
+                @media screen and (max-width: 1000px) {
+                    align-self: center;
+                }
+            }
+            .explore-btn:hover {
+                    background-color: blueviolet;
+                    transition-duration: 0.2s;
+            }
+        }
+        .top__pics {
+            width: 50%;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            height: 25em;
+            padding-bottom: 20em;
+            @media screen and (max-width: 1000px) {
+                justify-content: flex-start;
+                padding-bottom: 12em;
+            }
+            .pic-one {
+                width: 18em;
+                align-self: center;
+            }
+            .pic-two {
+                width: 18em;
+                align-self: flex-end;
+                margin-top: 0.2em;
+                @media screen and (max-width: 1000px) {
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .bot {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 15em;
+        background-image: url(../img/How-It-Works.png);
+        background-size: cover;
+        @media screen and (max-width: 1000px) {
+            height: 10em;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.part-three {
+    height: 30em;
+    position: relative;
+    background-image: url(../img/part-three.png);
+    background-size: cover;
+    .content {
+        height: 25em;
+        display: flex; 
+        flex-flow: column;
+        align-items: flex-start;
+        padding-bottom: 5em;
+        @media screen and (max-width: 1000px) {
+            align-items: center;
+            justify-content: center;
+        }
+        .tour {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            margin-top: 7em;
+            width: 40%;
+            height: 20em;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2em;
+            .tour__country {
+                font-size: 1.4em;
+                font-weight: normal;
+                margin-bottom: 1em;
+                opacity: 80%;
+            }
+            .tour__city {
+                margin-bottom: 1em;
+                font-size: 1.2em;
+                opacity: 80%;
+            }
+            .tour__text {
+                margin-bottom: 2.5em;
+                font-size: 0.9em;
+                opacity: 80%;
+                @media screen and (max-width: 1000px) {
+                    margin-bottom: 1em;
+                }
+            }
+            .tour__book {
+                align-self: start;
+                border: none;
+                background-color:#5474fd ;
+                color: white;
+                padding: 1.5em 4em;
+                @media screen and (max-width: 1000px) {
+                    transform: scale(0.6);
+                    width: 15em;
+                    align-self: center;
+                }
+            }
+            .tour__book:hover {
+                background-color: blueviolet;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+}
+
+.part-four {
+    height: 30em;
+    position: relative;
+    background-image: url(../img/part-four.png);
+    background-size: cover;
+    .content {
+        height: 25em;
+        display: flex; 
+        flex-flow: column;
+        align-items: flex-end;
+        padding-bottom: 5em;
+        @media screen and (max-width: 1000px) {
+            align-items: center;
+            justify-content: center;
+        }
+        .tour {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            margin-top: 7em;
+            width: 40%;
+            height: 20em;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2em;
+            .tour__country {
+                font-size: 1.4em;
+                font-weight: normal;
+                margin-bottom: 1em;
+                opacity: 80%;
+            }
+            .tour__city {
+                margin-bottom: 1em;
+                font-size: 1.2em;
+                opacity: 80%;
+            }
+            .tour__text {
+                margin-bottom: 2.5em;
+                font-size: 0.9em;
+                opacity: 80%;
+                @media screen and (max-width: 1000px) {
+                    margin-bottom: 1em;
+                }
+            }
+            .tour__book {
+                align-self: start;
+                border: none;
+                background-color:#5474fd ;
+                color: white;
+                padding: 1.5em 4em;   
+                @media screen and (max-width: 1000px) {
+                    transform: scale(0.6);
+                    width: 15em;
+                    align-self: center;
+                }
+            }
+            .tour__book:hover {
+                background-color: blueviolet;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+}
+
+.part-five {
+    background-image: url(../img/part-five.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 1000px) {
+        padding-bottom: 10em;
+    }
+    .content {
+        justify-content: start;
+    }
+    height: 33em;
+    h4 {
+        color: white;
+        font-weight: normal;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 2em;
+    }
+    .tourist {
+        display: flex;
+        flex-flow: row;
+        @media screen and (max-width: 1000px) {
+            flex-flow: column;
+        }
+        .tourist__pic {
+            height: 12em;
+            @media screen and (max-width: 1000px) {
+                height: auto;
+            }
+        }
+        .tourist__text {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            height: 12em;
+            padding: 0 3em;
+            background-color: #333333;
+            color: white;
+            @media screen and (max-width: 1000px) {
+                padding-top: 2em;
+                height: auto;
+                max-height: 205px;
+            }
+            .name {
+                font-size: 1.2em;
+                
+            }
+            p {
+                font-size: 1.1em;
+                span {
+                    font-size: 2em;
+                    color: #5270f0;
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+}
+
+.podval {
+    background-color: #232323;
+    width: 100%;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 12em;
+    .niz {
+        color: white;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 11em;
+        height: 12em;
+        margin-bottom: 3em;
+        .niz__logo {
+            font-size: 1.6em;
+            letter-spacing: 0.1em;
+        }
+        .niz__deviz {
+            font-size: 0.84em;
+        }
+        .niz__social {
+            display: flex;
+            flex-flow: row;
+            width: 100%;
+            justify-content: space-between;
+            margin: 1em 0;
+            a {
+                color: white;
+            }
+            a:hover {
+                color: #516fee;
+            }
+        }
+    }
+}
+
+
+
+
